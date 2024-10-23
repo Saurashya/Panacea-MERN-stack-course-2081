@@ -3,6 +3,7 @@
     background: green;
     box-sizing: border-box;
     font-family:'Merriweather', sans-serif;
+    transition: all 0.3s ease;
 }
 body{
     background: royalblue;
@@ -13,6 +14,8 @@ body{
 .heading{
     color:White;
     background: black;
+    transition: all 0.3s ease;
+    animation: forwards 0.3s;
 }
 #nextheading{
     color: black;
