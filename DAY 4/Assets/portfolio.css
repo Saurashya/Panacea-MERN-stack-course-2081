@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: "poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    height: 60vh;
+    width: 100%;
+}
+
+#navbar{
+    display: grid;
+    /* background: blue; */
+    height: 10%;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+/* NavBar Styling */
+#navbar h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbar ul>li{
+    list-style: none;
+}
+#navbar ul>li>a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: black;
+}
+#navbar ul>li>a:hover{
+    color: #FD6F00;
+}
+#navbar ul>li>button{
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+    background: #FD6F00;
+    color: white;
+    border: none;
+    border-radius:0.8rem;
+    cursor: pointer;
+    box-shadow: #FD6F00 0px 5px 20px;
+}
+#navbar ul>li>button:hover{
+    box-shadow: none;
+}
+
+/* Intro Styling */
+.intro{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    margin-top: 3rem;
+}
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0.8rem;
+    gap: 1rem;
+}
+.intro-content p{
+    font-size: 1.5rem;
+}
+.colored-span{
+    color: #FD6F00;
+}
+.intro-content h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.intro-content h2:nth-child(3){
+    transform: translateX(10rem);
+}
+.intro-content article{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+    width: 80%;
+}
+.styled-btn{
+    font-size: 1.5rem;
+    padding: 0.6rem 1rem;
+    background: #FD6F00;
+    color: white;
+    border: none;
+    border-radius:0.8rem;
+    cursor: pointer;
+    box-shadow: #FD6F00 0px 5px 20px;
+}
+.styled-btn:hover{
+    box-shadow: none;
+}
+
+.intro-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.intro-img img{
+    height: 30rem;
+    width: 30rem;
+    border: none;
+    border-radius: 100%;
+}
