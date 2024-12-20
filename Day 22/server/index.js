@@ -42,6 +42,17 @@ app.get('/viewProduct',async(req,res)=>{
         res.send(error)
     }
 })
+
+app.get('/viewProductById/:id', async (req, res) => {
+    const id = req.params.id;
+    try {
+      const result = await productModel.findOne({ ID: id });
+      res.send(result);
+    } catch (error) {
+      console.log(error);
+      res.status(500).send(error);
+    }
+  });
 app.get('/updateProduct',async(req,res)=>{
     try{
         const result=await productModel.updateMany({
