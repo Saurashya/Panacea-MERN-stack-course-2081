@@ -12,7 +12,6 @@ app.use(express.urlencoded({extended:true}))
 console.clear()
 
 
-
 app.get('/',(req,res)=>{
     res.send("Welcome to homepage")
 })
