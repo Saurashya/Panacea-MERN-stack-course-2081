@@ -1,6 +1,6 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv/config';
+import 'dotenv/config'
 import cookieParser from 'cookie-parser';
 
 const app = express();
@@ -61,3 +61,4 @@ function authenticateUser(req, res, next) {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+
